@@ -72,7 +72,7 @@ const phrases =[
    qwerty.addEventListener('click', (e)=>{
         if (e.target.tagName === 'BUTTON' ){
             if(e.target.className ==='chosen'){
-            //    e.target.className.chosenBtn=disabled;
+            e.target.disabled =true;
                    
             }else{
                 e.target.className= 'chosen';
