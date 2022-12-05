@@ -71,12 +71,13 @@ const phrases =[
 
    qwerty.addEventListener('click', (e)=>{
         if (e.target.tagName === 'BUTTON' ){
-            if(e.target.className ==='chosen'){
             e.target.disabled =true;
-                   
-            }else{
-                e.target.className= 'chosen';
-            }             
+            e.target.className ='chosen';
+            // if(e.target.disabled === false && !e.target.classList.contains('chosen')){
+            // e.target.disabled =true;
+            // e.target.className ='chosen';       
+            // }
+                
             const letterFound = checkLetter(e.target.textContent);
             if(letterFound ===null){
                
